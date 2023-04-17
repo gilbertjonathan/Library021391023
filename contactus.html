@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "layout.css" />
+</head>
+<body>
+	<div id = "box">
+		<header>
+		  <h1>Contact Us</h1>
+		</header>
+
+		<div id = "contents">
+		  <div class="menu">
+			<a href="index.html">Home</a>
+			<a href="aboutus.html">About us</a>
+			<a href="membership.html">Membership</a>
+			<a href="contactus.html">Contact us</a>
+		  </div>
+
+		  <div class="main">
+            <form>
+                <fieldset>
+
+                   <table id ="table">
+                    <tr>
+                    <th>First name</th>
+                    <td><input type = "text" placeholder = "John" /></td>
+                    </tr>
+                    <tr>
+                    <th>Last name</th> 
+                    <td><input type = "text" placeholder = "Smith" /></td>
+                    </tr>
+                    <tr>
+                    <th>E-mail</th>
+                    <td><input type = "text" placeholder = "johnsmith@gmail.com" /></td>
+                    </tr>
+                    <tr>
+                    <th>Phone Number</th>
+                    <td><input type = "text" placeholder = "041234567" /></td>
+                    </tr>
+                    <tr>
+                    <th>Question..</th>
+                    <td><textarea cols = "20" rows = "4"></textarea></td>
+                        
+                    </textarea>
+                    </tr>
+                    <tr>
+                    <th>Would you like to be contacted?</th>
+                    <td>
+                    <input type = "radio" name = "contact" />Yes
+                    <input type = "radio" name = "contact" />No
+                    </td>
+                    </tr>
+                    <tr>
+                    <td id="submit">
+                    <input type = "submit" value = "Sumbit Request" /></td>
+                    </tr>
+                   </table>
+
+                </fieldset>
+
+                <h3>The Book details</h3>
+                <p id="json1"></p>
+                <h3>The Author</h3>
+                <p id="json2"></p>
+                <script>
+                var myObj, x = "";
+                myObj = {
+                 "name":"Harry Potter,",
+                 "age":1998,
+                 "cars":[ "J.K.Rowling,", "Benny,", "Jonathan," , "Tyson" ]
+                };
+                document.getElementById("json1").innerHTML = myObj.name + " " + myObj.age;
+
+                for (i = 0; i<4; i++){
+                x = x + " " + myObj.cars[i];
+
+                document.getElementById("json2").innerHTML = x;
+                }
+                </script>
+    
+    
+    
+    
+            </form>
+		  </div>
+
+		  <div class="right">
+			<h2>About</h2>
+			Jonathan's Library acknowledges the traditional lands of all the Victorian Aboriginal clans, and their cultural practices and knowledge systems. 
+			We recognise that our collections hold traditional cultural knowledge belonging to Indigenous communities in Victoria and around the country.
+		
+            <h2>Library Opening Hours</h2>
+			<p>Weekdays from 8am to 6pm</p>
+			<p>Weekends from 9am to 3pm</p>
+
+		  </div>
+		</div>
+
+		<footer>© copyright Melbourne Polytechnic</footer>
+	</div>
+</body>
+</html>
